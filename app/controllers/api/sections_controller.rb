@@ -1,6 +1,6 @@
 class Api::SectionsController < ApplicationController
   def index
-    @posts = NineGag.index(section_url)
+    @posts = NineGag.index(section_url, params[:page])
     render json: { posts: @posts, next_page: @posts.last[:id] }, status: 200
   end
 
