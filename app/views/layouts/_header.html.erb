@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -13,7 +13,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <%= link_to 'Hot', root_path %>
+          <%= link_to 'Funny', index_path(section: 'funny') %>
+        </li>
+        <li>
+          <%= link_to 'NSFW', index_path(section: 'NSFW') %>
         </li>
         <li>
           <%= link_to 'WTF', index_path(section: 'wtf') %>
@@ -23,6 +26,9 @@
         </li>
         <li>
           <%= link_to 'Girl', index_path(section: 'girl') %>
+        </li>
+        <li>
+          <%= link_to 'GIF', index_path(section: 'gif') %>
         </li>
       </ul>
     </div>
