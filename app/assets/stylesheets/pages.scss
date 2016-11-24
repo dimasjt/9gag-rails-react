@@ -5,3 +5,18 @@ body{
     margin-bottom: 10px;
   }
 }
+
+.thumbnail{
+  .caption h3{
+    margin: 0 0 14px;
+    padding: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 1.5em;
+    a{
+      color: #000;
+    }
+  }
+}
