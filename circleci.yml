@@ -4,6 +4,5 @@ machine:
 deployment:
   production:
     branch: master
-    commands:
-      - git push git@heroku.com:nine-gag-rails-react.git $CIRCLE_SHA1:master
-      - heroku run rake db:migrate --app nine-gag-rails-react
+    heroku:
+      appname: nine-gag-rails-react
