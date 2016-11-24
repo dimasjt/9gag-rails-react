@@ -20,6 +20,22 @@ class Post extends React.Component {
     return titlePost
   }
 
+  imageOrGif(){
+    let video = this.props.post.media
+
+    if (video) {
+      const videoPlayer = (
+        <video poster={video.poster} autoPlay="true">
+          <source src={video.mp4} type="video/mp4" />
+          <source src={video.webm} type="video/webm" />
+        </video>
+      )
+      return videoPlayer;
+    }
+
+    return <img src={this.props.post.image} alt={this.props.post.title} />;
+  }
+
   render() {
     return (
       <div className="thumbnail">
@@ -28,7 +44,8 @@ class Post extends React.Component {
             {this.titlePost()}
           </h3>
         </div>
-        <img src={this.props.post.image} alt={this.props.post.title} />
+
+        {this.imageOrGif()}
       </div>
     );
   }
