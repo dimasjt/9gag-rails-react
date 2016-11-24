@@ -27,9 +27,6 @@ class PostsWrapper extends React.Component {
     let section = this.props.section;
     let type = this.props.type;
 
-    console.log(section);
-    console.log(type);
-
     if(section && type){
       return `/${section}/${type}`
     }
