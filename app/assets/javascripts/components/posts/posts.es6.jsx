@@ -24,12 +24,17 @@ class PostsWrapper extends React.Component {
   }
 
   paginationURL(){
-    if(this.props.section && this.props.type){
-      '/hot'
+    let section = this.props.section;
+    let type = this.props.type;
+
+    console.log(section);
+    console.log(type);
+
+    if(section && type){
+      return `/${section}/${type}`
     }
-    else {
-      `/${this.props.section}/${this.props.type}`
-    }
+
+    return '/hot'
   }
 
   render() {
@@ -47,8 +52,12 @@ class PostsWrapper extends React.Component {
   }
 }
 
+PostsWrapper.defaultProps = {
+  section: 'hot'
+}
+
 PostsWrapper.propTypes = {
-  posts: React.PropTypes.array,
+  posts: React.PropTypes.array.isRequired,
   section: React.PropTypes.string,
   type: React.PropTypes.string
 };
