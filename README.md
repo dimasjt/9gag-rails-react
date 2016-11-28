@@ -24,7 +24,8 @@ Example
         "webm": "http://img-9gag-fun.9cache.com/photo/aeY9dGW_460svwm.webm"
       }
     },
-    ...
+    
+    
   ],
   "next_page": "arOyBPy"
 }
@@ -44,7 +45,9 @@ Next Page
       "points": "1217",
       "media": null
     },
-    ...
+    
+    
+    
   ],
   "next_page": "a9WyBqm"
 }
