@@ -6,7 +6,7 @@ module ApplicationHelper
   def default_meta_tags
     {
       title: 'Home',
-      description: '9GAG dark mode, Ruby on Rails with ReactJS',
+      description: '9GAG dark mode, no ads, Ruby on Rails with ReactJS',
       keywords: %w(9gag rails ruby reactjs example api),
       og: {
         title: '9GAG dark mode',
