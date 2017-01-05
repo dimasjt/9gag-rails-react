@@ -29,9 +29,9 @@ class PostsWrapper extends React.Component {
 
     if(section && type){
       return `/${section}/${type}`
+    }else{
+      return '/home/hot'
     }
-
-    return '/hot'
   }
 
   render() {

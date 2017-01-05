@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   private
 
   def nine_gag_url
-    if params[:section].present?
+    if params[:section] != 'home'
       "#{params[:section]}/#{params[:type]}"
     else
       'hot'
