@@ -42,7 +42,7 @@ class PostsWrapper extends React.Component {
         })}
 
         <div className="load-more">
-          <a className="btn btn-primary btn-block" onClick={this.loadMore.bind(this)}>Load more</a>
+          <a className="btn btn-default btn-block" onClick={this.loadMore.bind(this)}>Load more</a>
         </div>
       </div>
     );
