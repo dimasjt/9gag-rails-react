@@ -7,7 +7,7 @@ API end point `http://9gag.dimasjt.com.com/api`
 
 ## Get /:section/:type
 Example
-`http://nine-gag-rails-react.herokuapp.com/api/funny/hot`
+`http://9gag.dimasjt.com/api/funny/hot`
 ```json
 {
   "posts": [
@@ -32,7 +32,7 @@ Example
 ```
 
 Next Page
-`http://nine-gag-rails-react.herokuapp.com/api/funny/hot?page=arOyBPy`
+`http://9gag.dimasjt.com/api/funny/hot?page=arOyBPy`
 ```json
 {
   "posts": [
@@ -56,7 +56,7 @@ Next Page
 ## Get /gag/:id
 
 Example
-`http://nine-gag-rails-react.herokuapp.com/api/gag/aeY9dGW`
+`http://9gag.dimasjt.com/api/gag/aeY9dGW`
 
 ```json
 {
