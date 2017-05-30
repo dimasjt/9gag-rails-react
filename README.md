@@ -1,13 +1,13 @@
 [![CircleCI](https://circleci.com/gh/dimasjt/9gag-rails-react/tree/master.svg?style=svg)](https://circleci.com/gh/dimasjt/9gag-rails-react/tree/master)
 
 # API
-API end point `http://9gag.dimasjt.com.com/api`
+API end point `http://9gag.dimasjt.com/api`
 - [GET /:section/:type](#get-sectiontype)
 - [GET /gag/:id](#get-gagid)
 
 ## Get /:section/:type
 Example
-`http://9gag.dimasjt.com/api/funny/hot`
+`/api/funny/hot`
 ```json
 {
   "posts": [
@@ -32,7 +32,7 @@ Example
 ```
 
 Next Page
-`http://9gag.dimasjt.com/api/funny/hot?page=arOyBPy`
+`/api/funny/hot?page=arOyBPy`
 ```json
 {
   "posts": [
@@ -56,7 +56,7 @@ Next Page
 ## Get /gag/:id
 
 Example
-`http://9gag.dimasjt.com/api/gag/aeY9dGW`
+`/api/gag/aeY9dGW`
 
 ```json
 {
