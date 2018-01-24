@@ -35,5 +35,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'react-rails'
 gem 'nine-gag', '>= 1.0.0'
+gem 'webpacker'
+
 gem 'bootstrap-sass'
 gem 'meta-tags'

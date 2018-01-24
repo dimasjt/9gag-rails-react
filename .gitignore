@@ -17,3 +17,9 @@
 .byebug_history
 .env
 /coverage/
+/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
