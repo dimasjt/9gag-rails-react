@@ -3,6 +3,8 @@ import { render } from "react-dom"
 import { Provider } from "react-redux"
 import { ConnectedRouter } from "react-router-redux"
 
+import "babel-polyfill"
+
 import Routes from "./Routes"
 
 import store from "./store"
