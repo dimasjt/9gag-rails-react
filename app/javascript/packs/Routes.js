@@ -3,10 +3,18 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 import SectionPage from "./pages/SectionPage"
 
+import Navbar from "./components/Navbar"
+
 const Routes = () => (
-  <Router>
-    <Route path="/" component={SectionPage} />
-  </Router>
+  <div>
+    <Navbar />
+
+    <div className="container">
+      <Router>
+        <Route path="/" component={SectionPage} />
+      </Router>
+    </div>
+  </div>
 )
 
 export default Routes

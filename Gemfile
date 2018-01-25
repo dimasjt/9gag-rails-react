@@ -37,5 +37,5 @@ gem 'react-rails'
 gem 'nine-gag', '>= 1.0.0'
 gem 'webpacker'
 
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0'
 gem 'meta-tags'
