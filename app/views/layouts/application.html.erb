@@ -7,8 +7,7 @@
 
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -16,10 +15,11 @@
 
     <div class="container">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3">
-        <%= yield %>
+        <div id="root"></div>
       </div>
     </div>
 
+    <%= javascript_pack_tag("App") %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
